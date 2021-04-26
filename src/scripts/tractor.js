@@ -1,16 +1,16 @@
-// import { addPlant, usePlants } from "./seeds/fields.js"
-// import { createSunflower } from "./seeds/sunflower.js"
-// import { createSoybean } from "./seeds/soybean.js"
-// import { createAsparagus } from "./seeds/asparagus.js"
-// import { createCorn } from "./seeds/corn.js"
-// import { createWheat } from "./seeds/wheat.js"
-// import { createPotato } from "./seeds/potato.js"
+import { addPlant, usePlants } from "./fields.js"
+import { createSunflower } from "./seeds/sunflower.js"
+import { createSoybean } from "./seeds/soybean.js"
+import { createAsparagus } from "./seeds/asparagus.js"
+import { createCorn } from "./seeds/corn.js"
+import { createWheat } from "./seeds/wheat.js"
+import { createPotato } from "./seeds/potato.js"
 
 export const plantSeeds = (yearlyPlanting) => {
     
     for (const plan of yearlyPlanting) {
-        for (let i = 0; i < plan.length; i++) {
-            if (plan[i] === "Asparagus") {
+        for (let j = 0; j < plan.length; j++) {
+            if (plan[j] === "Asparagus") {
                 addPlant(createAsparagus());
             }
             else if (plan[j] === 'Corn') {

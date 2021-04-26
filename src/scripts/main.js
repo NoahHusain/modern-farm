@@ -1,12 +1,14 @@
 import {createPlan} from './plan.js'
-import {addPlant} from './fields.js'
-// import {usePlants} from './fields.js'
+import {usePlants, addPlant} from './fields.js'
 import {plantSeeds} from './tractor.js'
+import { harvestPlants } from './harvester.js'
 
 createPlan()
 
 const yearlyPlan = createPlan()
 
-console.log(yearlyPlan)
+// const test = plantSeeds(yearlyPlan)
 
-// console.log(plantSeeds())
+// const test1 = harvestPlants(test)
+
+// console.log(test1)

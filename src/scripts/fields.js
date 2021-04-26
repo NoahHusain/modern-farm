@@ -1,24 +1,16 @@
 const plantsInField = []
 
 export const addPlant = (seedObject) => {
-    plantsInField.push(seedObject)
+    if (Array.isArray(seedObject)) {
+        for (const seed of seedObject) {
+            plantsInField.push(seed)
+        }
+    }   
+    else {
+            plantsInField.push(seedObject)
+    }
 }
 
-// export const usePlants = () => {
-//     return plantsInField
-// }
-
-const barley = {
-    type: 'Barley',
-    height: 320,
-    output: 5
+export const usePlants = () => {
+    return plantsInField
 }
-
-addPlant(barley)
-
-// usePlants(usedPlant)
-
-
-console.log(plantsInField)
-
-// console.log(usedPlant)
