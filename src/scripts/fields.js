@@ -1,12 +1,12 @@
 const plantsInField = []
 
-const addPlant = (seedObject) => {
+export const addPlant = (seedObject) => {
     plantsInField.push(seedObject)
 }
 
-const usePlants = () => {
-    return plantsInField
-}
+// export const usePlants = () => {
+//     return plantsInField
+// }
 
 const barley = {
     type: 'Barley',
@@ -16,9 +16,9 @@ const barley = {
 
 addPlant(barley)
 
-usePlants(usedPlant)
+// usePlants(usedPlant)
 
 
 console.log(plantsInField)
 
-console.log(usedPlant)
+// console.log(usedPlant)
